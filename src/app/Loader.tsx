@@ -1,0 +1,5 @@
+const Loader = () => (
+    <div className="flex justify-center items-center h-32">
+        <div className="loader">Loading...</div>
+    </div>
+);
