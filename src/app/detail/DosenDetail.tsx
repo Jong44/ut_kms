@@ -7,8 +7,8 @@ import TutorialOnline from "./TutorialOnline";
 import TutorialTatapMuka from "./TutorialTatapMuka";
 import Bimbingan from "./Bimbingan";
 import { useParams } from "react-router-dom";
-import Skeleton from 'react-loading-skeleton'; // Import the Skeleton component
-import 'react-loading-skeleton/dist/skeleton.css'; // Import the default styles
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const DosenDetail = () => {
     const { id } = useParams<{ id: string }>();
@@ -53,7 +53,7 @@ const DosenDetail = () => {
             </section>
 
             <section className="mt-10 flex justify-between max-md:flex-col max-md:gap-10">
-                <div className="shadow-[0px_2px_16px_0px_#d3d3d3] rounded-2xl w-[57%] max-md:w-auto">
+                <div className="shadow-[0px_2px_16px_0px_#d3d3d3] rounded-2xl w-[57%] max-md:w-auto relative">
                     <div className="bg-[#F5F5F5] rounded-t-2xl flex">
                         {menuTabs.map((menu, index) => (
                             <h3
@@ -86,7 +86,7 @@ const DosenDetail = () => {
                                     </div>
                                 ))
                             )}
-                            <div className="flex justify-center items-center py-5 text-sm text-[#595959]">
+                            <div className="flex justify-center items-center py-5 text-sm text-[#595959] absolute bottom-0 left-0 right-0">
                                 <p>Artikel 1 - 3</p>
                                 <button className="mx-5 bg-white border-[#595959] border px-3 py-1 rounded-md">Lebih Banyak</button>
                             </div>

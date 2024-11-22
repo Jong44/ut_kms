@@ -56,7 +56,7 @@ export default function TutorialOnline() {
                 headerData={headerTuton}
                 bodyData={
                     data[Number(id!)]?.mata_kuliah?.map((item: any) => ({
-                        onClick: () => navigate(`/detail/dosen/${id}/mata-kuliah/${item.kode}`), // Adjust based on your data structure
+                        onClick: () => navigate(`/detail/dosen/${id}/mata-kuliah/${item.id}`), // Adjust based on your data structure
                         data: [
                             { data: item.id },
                             { data: item.nama_matkul, isBold: true }, // Adjust based on your data structure

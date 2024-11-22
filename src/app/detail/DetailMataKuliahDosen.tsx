@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ChevronDownIcons } from "../../assets/icons"
+import { ChevronDownIcons, FilePrimaryIcons } from "../../assets/icons"
 
 const DetailMataKuliahDosen = () => {
   const [indexTab, setIndexTab] = useState(0)
@@ -21,8 +21,8 @@ const DetailMataKuliahDosen = () => {
       </section>
       <section className="mt-10">
         <div className="bg-[#F5F5F5] flex rounded-t-md">
-          <p className={`text-sm p-4 ${indexTab == 0 ? 'text-primary' : 'text-[#595959]'}`} onClick={() => handleTab(0)}>Nilai</p>
-          <p className={`text-sm p-4 ${indexTab == 1 ? 'text-primary' : 'text-[#595959]'}`} onClick={() => handleTab(1)}>Absensi</p>
+          <p className={`text-sm p-4 cursor-pointer font-semibold ${indexTab == 0 ? 'text-primary border-b' : 'text-[#595959]'}`} onClick={() => handleTab(0)}>Nilai</p>
+          <p className={`text-sm p-4 cursor-pointer font-semibold ${indexTab == 1 ? 'text-primary border-b' : 'text-[#595959]'}`} onClick={() => handleTab(1)}>Absensi</p>
         </div>
         <table className="w-full">
           <thead className=" text-primary text-left">
@@ -48,6 +48,26 @@ const DetailMataKuliahDosen = () => {
             ))}
           </tbody>
         </table>
+      </section>
+      <section className="mt-10 flex flex-col gap-10">
+        {new Array(3).fill(0).map((_, index) => (
+          <div key={index}>
+            <div className="py-3 px-5 w-full bg-[#F5F5F5] border-l-8 border-primary rounded-l-lg">
+              <p className="font-bold">Minggu {index + 1}</p>
+            </div>
+            <div className="px-6 py-5">
+              <div className="flex gap-4">
+                <img src={FilePrimaryIcons} alt="file-primary" className="w-8 h-8" />
+                <p className="font-primary text-lg font-semibold">Bahan Ajar</p>
+              </div>
+              <div className="flex gap-4 mt-10">
+                <img src={FilePrimaryIcons} alt="file-primary" className="w-8 h-8" />
+                <p className="font-primary text-lg font-semibold">Penugasan</p>
+              </div>
+
+            </div>
+          </div>
+        ))}
       </section>
     </main>
   )
