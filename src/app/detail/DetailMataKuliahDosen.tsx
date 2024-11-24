@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ChevronDownIcons, FilePrimaryIcons } from "../../assets/icons"
+import { ChevronDownIcons, FilePrimaryIcons, PdfIcons } from "../../assets/icons"
 
 const DetailMataKuliahDosen = () => {
   const [indexTab, setIndexTab] = useState(0)
@@ -49,7 +49,7 @@ const DetailMataKuliahDosen = () => {
           </tbody>
         </table>
       </section>
-      <section className="mt-10 flex flex-col gap-10">
+      <section className="mt-10 flex flex-col gap-5">
         {new Array(3).fill(0).map((_, index) => (
           <div key={index}>
             <div className="py-3 px-5 w-full bg-[#F5F5F5] border-l-8 border-primary rounded-l-lg">
@@ -60,10 +60,35 @@ const DetailMataKuliahDosen = () => {
                 <img src={FilePrimaryIcons} alt="file-primary" className="w-8 h-8" />
                 <p className="font-primary text-lg font-semibold">Bahan Ajar</p>
               </div>
-              <div className="flex gap-4 mt-10">
+              <div className="p-5 flex flex-col gap-5">
+                <div className="flex gap-3">
+                  <img src={PdfIcons} alt="file-primary" className="w-5 h-5" />
+                  <div>
+                    <p className="font-primary text-lg font-semibold text-sm">Materi 1</p>
+                    <p className="text-[#595959] text-xs">Diunggah: 10/31/2024</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <img src={PdfIcons} alt="file-primary" className="w-5 h-5" />
+                  <div>
+                    <p className="font-primary text-lg font-semibold text-sm">Materi 1</p>
+                    <p className="text-[#595959] text-xs">Diunggah: 10/31/2024</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-4 mt-2">
                 <img src={FilePrimaryIcons} alt="file-primary" className="w-8 h-8" />
                 <p className="font-primary text-lg font-semibold">Penugasan</p>
               </div>
+              <div className="p-5">
+                  <p className="font-medium text-sm">Tugas 1 - HTML</p>
+                  <p className="text-[#595959] text-sm">Membuat halaman web sederhana menggunakan HTML</p>
+                  <p className="text-[#595959] text-xs underline cursor-pointer mt-3">1 Lampiran</p>
+                  <div className="flex items-center gap-10  mt-3">
+                  <a href="1/jawaban/1" className="bg-[#F5F5F5] px-4 py-2 rounded-lg text-xs">Lihat Jawaban</a>
+                  <p className="text-[#595959] text-xs">Tenggat: 10/31/2024</p>
+                  </div>
+                </div>
 
             </div>
           </div>

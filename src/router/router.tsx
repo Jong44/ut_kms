@@ -3,6 +3,7 @@ import Home from "../app/Home";
 import Result from "../app/Result";
 import DosenDetail from "../app/detail/DosenDetail";
 import DetailMataKuliahDosen from "../app/detail/DetailMataKuliahDosen";
+import DetailJawaban from "../app/detail/DetailJawaban";
 
 export const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
                 path: "dosen/:id/mata-kuliah/:idMataKuliah",
                 element: <DetailMataKuliahDosen />,
             },
+            {
+                path: "dosen/:id/mata-kuliah/:idMataKuliah/jawaban/:idJawaban",
+                element: <DetailJawaban />,
+            }
         ],
     },
     
