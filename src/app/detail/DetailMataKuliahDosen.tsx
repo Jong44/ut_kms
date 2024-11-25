@@ -56,8 +56,8 @@ const DetailMataKuliahDosen = () => {
         <table className="w-full">
           <thead className=" text-primary text-left">
             <tr>
-              <th className="py-3 px-5 w-[10%]">NIM</th>
-              <th className="py-3 px-5 w-[60%]">Nama</th>
+              <th className="py-3 px-5 w-[10%] max-md:w-auto">NIM</th>
+              <th className="py-3 px-5 w-[60%] max-md:w-auto">Nama</th>
               {indexTab == 0 ? (
                 <>
                   <th className="py-3 px-5 text-right">TA</th>
