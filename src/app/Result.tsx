@@ -17,7 +17,7 @@ const Result = () => {
     setTabIndex(index);
   }
 
-   const { data, loading } = useFetch<any>(`/dosen/aktivitas-perkuliahan-tuton`);
+   const { data, loading } = useFetch<any>(`dosen/aktivitas-perkuliahan-tuton`);
    const [sortedData, setSortedData] = useState<any>(data);
 
    useEffect(() => {
