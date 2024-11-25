@@ -12,7 +12,7 @@ const useFetch = <T>(endpoint: string): FetchResult<T> => {
   const [error, setError] = useState<Error | null>(null);
   
   useEffect(() => {
-    const BASE_URL = "https://cors-anywhere.herokuapp.com/https://dummy-kampus.syaifur.id"
+    const BASE_URL = "https://dummy-kampus.syaifur.id"
     const fetchData = async () => {
       try {
         const response = await fetch(`${BASE_URL}/${endpoint}`);
