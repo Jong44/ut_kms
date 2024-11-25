@@ -12,7 +12,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 
 const DosenDetail = () => {
     const { id } = useParams<{ id: string }>();
-    const { data, loading } = useFetch<PenelitianPengabdian[]>(`/dosen/penelitian-pengabdian`);
+    const { data } = useFetch<PenelitianPengabdian[]>(`/dosen/penelitian-pengabdian`);
   
 
     useEffect(() => {
