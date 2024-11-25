@@ -4,3 +4,4 @@ export {default as XIcons} from './x.svg';
 export {default as ChevronDownIcons} from './chevron-down.svg';
 export {default as FilePrimaryIcons} from './file-primary.svg';
 export {default as PdfIcons} from './pdf.svg';
+export {default as CheckIcons} from './check.svg';

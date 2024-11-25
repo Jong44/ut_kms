@@ -1,5 +1,5 @@
-import React from 'react'
-import { FilePrimaryIcons, PdfIcons } from '../../assets/icons'
+
+import { FilePrimaryIcons } from '../../assets/icons'
 
 const DetailJawaban = () => {
     return (
