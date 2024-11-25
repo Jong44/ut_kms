@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CircleProfile from "../../components/CircleProfile";
-import { Penelitian, PenelitianPengabdian, Pengabdian, Publikasi } from "../../api/res";
+import { PenelitianPengabdian } from "../../api/res";
 import useFetch from "../../hooks/useFetch";
 import Perwalian from "./Perwalian";
 import TutorialOnline from "./TutorialOnline";

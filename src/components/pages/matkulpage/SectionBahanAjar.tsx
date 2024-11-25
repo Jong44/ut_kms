@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FilePrimaryIcons, PdfIcons } from "../../../assets/icons"
 import Skeleton from 'react-loading-skeleton';
 import { BahanAjar } from "../../../api/res";
@@ -14,7 +14,7 @@ const SectionBahanAjar: React.FC<SectionBahanAjarProps> = ({
     return (
         <div>
             {data ?
-                data.map((item, index) => (
+                data.map((item) => (
                     <>
                         <div className="flex gap-4">
                             <img

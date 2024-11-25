@@ -3,3 +3,5 @@ const Loader = () => (
         <div className="loader">Loading...</div>
     </div>
 );
+
+export default Loader;
