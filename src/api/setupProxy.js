@@ -4,7 +4,7 @@ module.exports = function (app) {
     app.use(
         'https://dummy-kampus.syaifur.id',
         createProxyMiddleware({
-            target: 'http://localhost:5173',
+            target: 'https://ut-kms.vercel.app',
             changeOrigin: true,
         })
     );
